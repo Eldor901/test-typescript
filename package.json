@@ -1,0 +1,30 @@
+{
+  "name": "omegarproj",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "mocha dist/test.spec.js --reporter spec",
+    "start": "node dist/app.js",
+    "test-with-covrage": "nyc --reporter=text  mocha",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p ."
+  },
+  "author": "eldor",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1",
+    "nodeman": "^1.1.2",
+    "nyc": "^14.1.1",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.4.1"
+  }
+}
